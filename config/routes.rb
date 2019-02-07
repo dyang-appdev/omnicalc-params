@@ -18,5 +18,15 @@ Rails.application.routes.draw do
   
   get("/payment/new", { :controller => "calc", :action => "payment_inputs"})
   get("/payment/results", { :controller => "calc", :action => "payment_results"})
+  
+  get("/random/new", { :controller => "calc", :action => "random_inputs"})
+  get("/random/results", { :controller => "calc", :action => "random_results"})
+
+  get("/word_count/new", { :controller => "calc", :action => "word_count_inputs"})
+  get("/word_count/results", { :controller => "calc", :action => "word_count_results"})
+  
+  get("/descriptive_stats/new", { :controller => "calc", :action => "stats_input"})
+  get("/descriptive_stats/results", { :controller => "calc", :action => "stats_results"})
+  
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
